@@ -18,11 +18,16 @@ h1, h2, h3, ul, p{
     border-radius: 100px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: 'Comfortaa', sans-serif;
 }
 .button:hover{
     background-color: #154577;
+    font-family: 'Comfortaa', sans-serif;
 }
 .indent{
     margin-top: -10px;
     font-size: 90%;
 }
+
+/* font-family: 'Comfortaa', sans-serif;
+font-family: 'Poppins', sans-serif; */
