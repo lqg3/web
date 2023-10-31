@@ -8,3 +8,21 @@ h1, h2, h3, ul, p{
     font-family: "Trebuchet MS", sans-serif;
     font-family: 'Comfortaa', sans-serif;
 }
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button:hover{
+    background-color: #154577;
+}
+.indent{
+    margin-top: -10px;
+    font-size: 90%;
+}
