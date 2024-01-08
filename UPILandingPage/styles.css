@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6, p{
     background: #ea0000;
     font-family: Comfortaa, sans-serif;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 999;
     }   
     .navbar ul {
     padding: 20px;
@@ -38,6 +39,7 @@ h1, h2, h3, h4, h5, h6, p{
     .navbar ul li {
     display: inline-block;
     margin: 0 10px;
+    
     }
     .navbar ul li a {
     padding: 10px 0;
@@ -47,19 +49,38 @@ h1, h2, h3, h4, h5, h6, p{
     font-weight: bold;
     transition: all 0.2s ease;
     }
-    .navbar ul li a:hover {
-    color: #cecece;
+
+    .navbar ul li:hover{
+        animation: mymove 0.1s infinite;
     }
+
+    .navbar ul li a:hover{
+        background-color: black;
+    }
+
+    @keyframes mymove {
+        50% {transform: rotate(180deg);}
+
+      }
+    .navbar ul li a:hover {
+    /* background-color: #cecece; */
+    transform: rotate(45deg);
+
+    }
+
     .navbar img{
         width: 40px;
         height: 40px;
         padding: 3px;
         margin-left: 20px;
         margin-top: 7px;
+        margin-right: 99px;
     }
 
+
+
 .bannerimage {
-    margin-top: 0;
+    margin-top: 0;  
     width: 100%;
     border-radius: 20px;
 }
@@ -91,8 +112,8 @@ button:hover{
     color: white;
     background-color: red;
     margin-top: -35px;
-    position: relative;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 
 .red-square p{
@@ -263,3 +284,4 @@ footer{
 .news img{
     border-radius: 20px 20px 0 0;
 }
+
