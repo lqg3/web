@@ -61,51 +61,62 @@ a:hover{
     opacity: 50%;
 }
 /* End of navigation bar */
-/* Header */
-.greeting{
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    padding: 5vw;
-}
-.greeting h3, p{
-    margin: 0 0;
-}
-.greeting p{
-    font-size: 3vh;
-}
-.name{
-    font-size: 5vh;
-}
-.what-am-i{
-    background-color: rgb(91, 87, 87);
-    padding: 5px;
-    border-radius: 5px;
-    animation: crossfade 2.5s ease-in-out infinite;
+/* Start of main */
+/* Start of profile */
+
+main{
+    margin: 0 auto;
+    width: 80vw;
 }
 
-    @keyframes crossfade {
-    0%, 100% {
-        opacity: 0;
-    }
-    25%, 75% {
-        opacity: 1;
-  }
-}
-
-/* End of header */
-/* Start of bio */
-.bio{
+.personal-data{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 5vw;
-    gap: 5vh;
-    justify-content: left;
+    background-color: rgb(41, 41, 41);
+    border-radius: 2vw;
+    justify-content: space-evenly;
+    margin: 0;
 }
-.content{
-    max-width: 500px;
+
+.pic-n-name{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}.pic-n-name img{
+    width: 100%;
+    max-width: 395px;
+    border-radius: 2vw;
+}.pic-n-name p{
+    padding: 10px;
 }
-.content p{
-    text-align: justify;
-    font-size: .7rem;
+.biodata{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 80vh;
+    gap: 10px;
+}
+.biodata-itemblock{
+    margin: 0;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgb(69, 69, 69);
+    display: flex;
+    justify-content: space-between;
+}
+.biodata-itemblock p{
+    margin: 0;
+    padding: 15px;
+    font-size: .9rem;
+}
+.language-specs{
+    font-size: 8px;
+    font-style: italic;
+    color: rgb(156, 155, 155);
+    background-color: #1a1a1a;
+    border: 1px solid rgb(123, 123, 123);
+    padding: 0px 5px 0px 4px;
+    border-radius: 10px;
 }

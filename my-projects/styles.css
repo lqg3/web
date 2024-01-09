@@ -61,51 +61,5 @@ a:hover{
     opacity: 50%;
 }
 /* End of navigation bar */
-/* Header */
-.greeting{
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    padding: 5vw;
-}
-.greeting h3, p{
-    margin: 0 0;
-}
-.greeting p{
-    font-size: 3vh;
-}
-.name{
-    font-size: 5vh;
-}
-.what-am-i{
-    background-color: rgb(91, 87, 87);
-    padding: 5px;
-    border-radius: 5px;
-    animation: crossfade 2.5s ease-in-out infinite;
-}
-
-    @keyframes crossfade {
-    0%, 100% {
-        opacity: 0;
-    }
-    25%, 75% {
-        opacity: 1;
-  }
-}
-
-/* End of header */
-/* Start of bio */
-.bio{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 5vw;
-    gap: 5vh;
-    justify-content: left;
-}
-.content{
-    max-width: 500px;
-}
-.content p{
-    text-align: justify;
-    font-size: .7rem;
-}
+/* Start of main */
+/* Start of Profile */
