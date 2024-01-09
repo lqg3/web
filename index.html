@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -24,18 +27,31 @@
       <div class="greeting">
         <p>Hello, I'm</p>
         <p><span class="name">Steven Simbolon</span></p>
-        <p>a <span class="what-am-i" id="cyclingText">Software Engineer</span></p>
+        <p>
+          a <span class="what-am-i" id="cyclingText">Software Engineer</span>
+        </p>
         <script>
-          const textArray = ["UI/UX Designer", "Fullstack Developer", "Software Engineer"];
+          const textArray = [
+            "UI/UX Designer",
+            "Fullstack Developer",
+            "President of the United States",
+            "(n) Interpol Criminal",
+            '"Human"',
+            "(n) Aviation Enthusiast",
+            "Reporter for Deustche Wellen",
+            "Michael Jackson Reincarnation",
+            "(n) Impostor",
+            "Software Engineer",
+          ];
           let currentIndex = 0;
           const cyclingTextElement = document.getElementById("cyclingText");
 
-          function cycleText(){
-              cyclingTextElement.textContent = textArray[currentIndex];
-              currentIndex = (currentIndex + 1) % textArray.length;
+          function cycleText() {
+            cyclingTextElement.textContent = textArray[currentIndex];
+            currentIndex = (currentIndex + 1) % textArray.length;
           }
 
-        setInterval(cycleText, 2500);
+          setInterval(cycleText, 2500);
         </script>
       </div>
       <div class="bio">
@@ -95,13 +111,30 @@
         </div>
         <div class="content">
           <h4>Contact</h4>
-          <p>You can contact me via Instagram on <a href="https://instagram.com/steven.1337_" target="_blank">@steven.1337_</a></p><br><br><br>
-        <div class="content">
-          <h4>My Background Album</h4>
-          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2M2Ae2SvZe3fmzUtlVOV5Z?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          <p>No, I haven't finished Undertale. The soundtrack is absolutely FIRE. I stand by it and regret nothing.</p>
-        </div>
-        
+          <p>
+            You can contact me via Instagram on
+            <a href="https://instagram.com/steven.1337_" target="_blank"
+              >@steven.1337_</a
+            >
+          </p>
+          <br /><br /><br />
+          <div class="content">
+            <h4>My Background Album</h4>
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/album/2M2Ae2SvZe3fmzUtlVOV5Z?utm_source=generator"
+              width="100%"
+              height="352"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+            <p>
+              No, I haven't finished Undertale. The soundtrack is absolutely
+              FIRE. I stand by it and regret nothing.
+            </p>
+          </div>
         </div>
       </div>
     </main>
