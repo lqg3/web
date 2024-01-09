@@ -1,20 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Steven M. C. Simbolon</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="images/smcs-name.png">
-</head>
-<body>
-    <div class="center">
-        <h1>Website is Under Construction.</h1>
-        <h2>Check back later.</h2>
-        <a class="button-custom" href="https://github.com/stevendotexe" target="_blank">My GitHub Page</a>
-    </div>
-</body>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="logo-placement">
+        <img src="img/smcs-w.png" class="navbar-logo" alt="personal logo" />
+      </div>
+      <ul>
+        <li>Home</li>
+        <li>My Projects</li>
+        <li>Bio</li>
+      </ul>
+    </nav>
+    <main>
+      <div class="greeting">
+        <p>Hello, I'm</p>
+        <p><span class="name">Steven Simbolon</span></p>
+        <p>a <span class="what-am-i" id="cyclingText">Software Engineer</span></p>
+        <script>
+          const textArray = ["UI/UX Designer", "Fullstack Developer", "Software Engineer"];
+          let currentIndex = 0;
+          const cyclingTextElement = document.getElementById("cyclingText");
+
+          function cycleText(){
+              cyclingTextElement.textContent = textArray[currentIndex];
+              currentIndex = (currentIndex + 1) % textArray.length;
+          }
+
+        setInterval(cycleText, 2500);
+        </script>
+      </div>
+      <div class="bio">
+        <div class="content">
+          <h4>Who am I?</h4>
+          <p>
+            Hello, there! My name is Steven, I am a student in Indonesia,
+            studying software engineering at the
+            <a
+              href="https://en.wikipedia.org/wiki/Indonesia_University_of_Education"
+              target="_blank"
+              >Indonesian University of Education</a
+            >
+            (UPI). I am currently on the first semester, learning the basics of
+            coding, such as learning to program using Python, learning to
+            utilize multi media in several applications in computer science and
+            fields alike, amongst other things.
+          </p>
+        </div>
+        <div class="content">
+          <h4>What things can I do?</h4>
+          <p>
+            I am currently a beginner in Python development and is currently
+            planning to continue on my semester 1 project,
+            <a href="https://github.com/stevendotexe/MoniFit" target="_blank"
+              >MoniFit</a
+            >. Outside of that, I am currently learning web development with
+            HTML, CSS, and JavaScript, with future plans on learning the Vue
+            framework and the React framework.
+          </p>
+        </div>
+        <div class="content">
+          <h4>Where am I located?</h4>
+          <p>
+            I am currently staying in Bandung, Indonesia in a 'dormitory room',
+            while studying there. I am originally from Bogor, but I moved to
+            Jakarta for my mothers' work related reasons, and had graduated high
+            school in 2023.
+          </p>
+        </div>
+        <div class="content">
+          <h4>What Skills do I have?</h4>
+          <p>
+            Aside from programming, I can speak English at a proficient level,
+            and currently is learning French. I am an Indonesian native.
+          </p>
+        </div>
+        <div class="content">
+          <h4>What are my hobbies?</h4>
+          <p>
+            I like to watch movies and play games, although not as much as I
+            used to. On the movies subject, I like to watch Marvel movies and
+            sitcoms like The Good Place, Brooklyn Nine-Nine
+            <i>(rest in peace Andre Braugher, you will be missed.)</i>, Parks
+            and Recreation, The Office, and many other shows.
+          </p>
+        </div>
+        <div class="content">
+          <h4>Contact</h4>
+          <p>You can contact me via Instagram on <a href="https://instagram.com/steven.1337_" target="_blank">@steven.1337_</a></p><br><br><br>
+        <div class="content">
+          <h4>My Background Album</h4>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2M2Ae2SvZe3fmzUtlVOV5Z?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <p>No, I haven't finished Undertale. The soundtrack is absolutely FIRE. I stand by it and regret nothing.</p>
+        </div>
+        
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
