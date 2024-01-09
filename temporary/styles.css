@@ -1,0 +1,91 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    color: rgb(174, 209, 254);
+}
+a:hover{
+    color: rgb(150, 180, 219);
+    animation: ease-in 5ms;
+}
+/* Navigation Bar */
+.logo-placement p{
+    margin: 0;
+}
+.navbar-logo{
+    padding: 1rem;
+    width: 15vw;
+    max-width: 90px;
+}
+.navigation{
+    display: flex;
+    top: 0;
+    background-color: #000000;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+.navigation p, li, ul{
+    font-size: 0.8rem;
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+/* End of navigation bar */
+/* Header */
+.greeting{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 5vw;
+}
+.greeting h3, p{
+    margin: 0 0;
+}
+.greeting p{
+    font-size: 3vh;
+}
+.name{
+    font-size: 5vh;
+}
+.what-am-i{
+    background-color: rgb(91, 87, 87);
+    padding: 5px;
+    border-radius: 5px;
+    animation: crossfade 2.5s ease-in-out infinite;
+}
+
+    @keyframes crossfade {
+    0%, 100% {
+        opacity: 0;
+    }
+    25%, 75% {
+        opacity: 1;
+  }
+}
+
+/* End of header */
+/* Start of bio */
+.bio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5vw;
+    gap: 5vh;
+    justify-content: left;
+}
+.content{
+    max-width: 500px;
+}
+.content p{
+    text-align: justify;
+    font-size: .7rem;
+}
