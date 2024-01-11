@@ -7,15 +7,16 @@
     --card-bg: rgb(41, 41, 41);
     --card-inner-bg: rgb(69, 69, 69);
     --card-border-radius: 2vw;
+    --card-hover: #343434;
 }
 
 body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
+    background-color: var(--background-color);
     color: #fff;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--site-font);
 }
 a{
     color: rgb(174, 209, 254);
@@ -49,7 +50,7 @@ a:hover{
     margin: 0;
     padding: 10px;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--site-font);
 }
 
 .navigation a{
@@ -73,65 +74,31 @@ a:hover{
 }
 /* End of navigation bar */
 /* Start of main */
-/* Start of profile */
-
 main{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    padding: 2vw;
+    margin: 5vw 0 0 5vw;
+    width: 800px;
+    max-width: 75vw;
 }
 
-.personal-data{
-    width: 80vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: rgb(41, 41, 41);
-    border-radius: 2vw;
-    justify-content: space-evenly;
-    margin: auto;
-}
-
-.pic-n-name{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-}.pic-n-name img{
-    width: 100%;
-    max-width: 395px;
-    border-radius: 2vw;
-}.pic-n-name p{
-    padding: 10px;
-}
-.biodata{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 80vh;
-    gap: 10px;
-}
-.biodata-itemblock{
+.blog-title h1{
+    max-width: 150vh;
     margin: 0;
-    border-radius: 10px;
-    width: 100%;
-    background-color: rgb(69, 69, 69);
-    display: flex;
-    justify-content: space-between;
+    font-size: 5vh;
 }
-.biodata-itemblock p{
-    margin: 0;
-    padding: 15px;
-    font-size: .9rem;
-}
-.language-specs{
-    font-size: 8px;
-    font-style: italic;
-    color: rgb(156, 155, 155);
-    background-color: #1a1a1a;
-    border: 1px solid rgb(123, 123, 123);
-    padding: 0px 5px 0px 4px;
-    border-radius: 10px;
+.blog-image img{
+    margin-top: 20px;
+    max-width: 70vh;
 }
 
+.dates-and-info{
+    color: rgb(118, 112, 112);
+    font-size: 70%;
+    margin-top: -10px;
+}
+.main-text{
+    text-align: justify;
+}
+.location{
+    font-weight: 800;
+}
