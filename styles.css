@@ -109,3 +109,7 @@ a:hover{
     text-align: justify;
     font-size: .7rem;
 }
+
+.email{
+    color: rgb(174, 209, 254);
+}
