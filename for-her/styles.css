@@ -1,0 +1,44 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+main{
+    margin: 5vh auto 0 auto;
+    width: 70vw;
+    height: 50vh;
+    text-align: center;
+}
+
+h5{
+    font-size: min(30px, 4vw);
+}
+
+img{
+    width: 300px;
+    max-width: 60vw;
+}
+.yesButton{
+    color: white;
+    background-color: rgb(19, 237, 19);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.yesButton:hover{
+    background-color: rgb(18, 189, 18);
+}
+
+.noButton{
+    color: white;
+    background-color: rgb(237, 19, 19);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.noButton:hover{
+    background-color: rgb(189, 1, 1);
+}
+
+button{
+    font-size: 25px;
+}
