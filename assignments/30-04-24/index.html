@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae: Assignment</title>
+    <style>
+        :root{
+            --card-color: #633B48;
+            --card-text-color: #EFB8C8;
+            --inner-card-color: #EFB8C8;
+            --inner-card-text: #633B48;
+        }
+        body{
+            background-color: #31111D;
+            margin: auto;
+            font-family: "Poppins";
+        }
+        header{
+            height: 10vh;
+            background-color: var(--card-color);
+            border-radius: 0px 0px 20px 20px;
+            box-shadow: 0px 0px 5px 0px;
+        }
+        header img{
+            width: 11vh;
+            max-width: 80px;
+            padding: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 2vh;
+            position: sticky;
+        }
+        .title-card{
+            padding: 5px;
+            text-align: center;
+            color: var(--card-text-color);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5vh;
+            width: 60vw;
+            max-width: 300px;
+            background-color: var(--card-color);
+            border-radius: 20px;
+            font-size: 1.5vh;
+            box-shadow: 0px 3px 4px rgb(24, 24, 24);
+        }
+        main{
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    .personal-data{
+        width: 80vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: var(--card-color);
+        color: var(--card-text-color);
+        border-radius: 2vw;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+    .pic-n-name{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }.pic-n-name img{
+        width: 100%;
+        max-width: 395px;
+        border-radius: 2vw;
+    }.pic-n-name p{
+        padding: 10px;
+    }
+    .biodata{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 80vh;
+        gap: 10px;
+    }
+    .biodata-itemblock{
+        margin: 0;
+        border-radius: 10px;
+        width: 100%;
+        background-color: var(--inner-card-color);
+        color: var(--inner-card-text);
+        display: flex;
+        justify-content: space-between;
+    }
+    .biodata-itemblock p{
+        margin: 0;
+        padding: 15px;
+        font-size: .9rem;
+    }
+    .language-specs{
+        font-size: 8px;
+        font-style: italic;
+        color: var(--card-color);
+        background-color: var(--card-text-color);
+        border: 1px solid rgb(123, 123, 123);
+        padding: 0px 5px 0px 4px;
+        border-radius: 10px;
+    }
+    </style>
+</head>
+<body> 
+    <header>
+        <a href="https://stevensimbolon.me" target="_blank">
+        <img src="https://stevensimbolon.me/img/smcs-w.png">
+        </a>
+    </header>
+    <div class="title-card">
+        <p>Tugas Dosen Praktisi: Curriculum Vitae</p>
+    </div>
+    <main>
+        <h1 style="text-align: center; color: var(--inner-card-color)">Bio</h1>
+        <div class="personal-data">
+          <div class="pic-n-name">
+            <img src="https://stevensimbolon.me/img/twb.png" alt="Self Portrait" />
+            <p>Steven Martua Christian Simbolon</p>
+          </div>
+          <div class="biodata">
+            <div class="biodata-itemblock">
+              <p style="text-align: justify">
+                <b>Description</b><br />
+                I am Steven, a student in the Indonesian University of Education,
+                studying Software Engineering. I am currently on my first semester
+                and learning to build applications using Python, while learning
+                the basics of programming.<br /><br />Aside from Python, I am also
+                currently learning the basics of web development, utilizing HTML,
+                CSS, JavaScript to build websites and web applications, but I am
+                also planning to learn the Vue and React framework int he future
+                to further improve my work.
+              </p>
+            </div>
+            <div class="biodata-itemblock">
+              <p><b>DOB</b></p>
+              <p>May 20</p>
+            </div>
+            <div class="biodata-itemblock">
+              <p><b>Location</b></p>
+              <p style="text-align: right">Bandung | Jakarta<br><span style="font-size: 80%; color: #ac8f98">Indonesia</span></p>
+            </div>
+            <div class="biodata-itemblock">
+              <p><b>Occupation</b></p>
+              <p style="text-align: right">Freelancer<br>Student</p>
+            </div>
+            <div class="biodata-itemblock">
+              <p><b>Specialty</b></p>
+              <p style="text-align: right">User Interface Design<br>Website Design</p>
+            </div>
+            <div class="biodata-itemblock">
+              <p><b>Programming<br>Languages</b></p>
+              <p style="text-align: right">
+                  <img src="https://stevensimbolon.me/img/python.svg" style="width: 2vh;"> Python<br>
+                  <img src="https://stevensimbolon.me/img/javascript.svg" style="width: 2vh;"> JavaScript<br>
+              </p>
+            </div>
+            <div class="biodata-itemblock">
+              <p><b>Languages</b></p>
+              <p style="text-align: right">
+                  Indonesian <span class="language-specs" >NATIVE</span><br>
+                  English <span class="language-specs" >C1</span><br>
+                  French <span class="language-specs" >A1</span><br>
+              </p>
+            </div>
+            <div class="biodata-itemblock">
+                <p><b>Certifications</b></p>
+                <p style="text-align: right">Harvard CS50P</p>
+              </div>
+          </div>
+        </div>
+        <p style="text-align: center; color: var(--inner-card-color); font-size: 10px;">Website: <a href="https://www.stevensimbolon.me" target="_blank" style="color: pink;">https://stevensimbolon.me/</a></p>
+      </main>
+</body>
+</html>
