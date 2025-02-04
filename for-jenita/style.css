@@ -1,0 +1,63 @@
+body {
+  background-color: #1b1b1b;
+}
+
+div.header {
+  height: 100vh;
+  width: auto;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.header div.question {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+}
+div.header div.question h1 {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 1.5em;
+}
+div.header div.question h3 {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 1em;
+  margin: 0;
+  font-weight: 300;
+}
+div.header div.question a {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  font-size: 0.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.header div.question div.options {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}
+div.header div.question div.options a {
+  font-weight: 700;
+  padding: 5px 15px;
+  border-radius: 25px;
+  background-color: #fff;
+  transition: 0.3s;
+  color: black;
+}
+div.header div.question div.options a.yes {
+  background-color: transparent !important;
+  color: white;
+  border: 2px solid white;
+}
+div.header div.question div.options a.yes:hover {
+  background-color: rgb(175, 1, 1) !important;
+  border: 2px solid rgb(175, 1, 1);
+}
+div.header div.question div.options a:hover {
+  background-color: #b3b3b3;
+}/*# sourceMappingURL=style.css.map */
