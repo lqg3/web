@@ -13,12 +13,13 @@
 </head>
 <body>
     
-    <audio controls>
+    <audio controls style="visibility: hidden; position: absolute;" id="goldenHour">
         <source src="goldenhour.mp3" type="audio/mpeg">
     </audio>
 
     <div class="header">
         <div class="question">
+            <div class="options"><a href="#" class="yes" id="playAudio">Gee, what's this?</a></div>
             <h1 id="question"></h1>
             <div class="options" id="options" style="visibility: hidden;">
                 <div class="yesheart">
