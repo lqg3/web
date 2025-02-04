@@ -74,6 +74,7 @@ function playAudio(){
         song.play();
         buttonElement.style.display = 'none';
         changeText();
+        window.scrollBy({ top: 500, behavior: "smooth" });
     });
 
 }
