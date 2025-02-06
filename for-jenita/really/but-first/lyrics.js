@@ -45,7 +45,7 @@ async function shiningBackground() {
     console.log("background active");
 
     const lyricsElement = document.getElementById("lyrics");
-    const shiningColors = ["#FFD700", "#FF4500", "#32CD32", "#1E90FF", "#FF1493", "#00CED1", "#9400D3"];
+    const shiningColors = ["#FFD700", "#FFDF00", "#FFBF00", "#FFAF00", "#FF9F00", "#FF8F00", "#FF7F00"];
     let interval = null;
 
     function updateShining() {
