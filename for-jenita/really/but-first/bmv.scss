@@ -18,7 +18,7 @@ body{
 
 #questionZoom{
     display: block;
-    transition: transform 10s cubic-bezier(.63,0,.96,.71);
+    transition: transform 10s cubic-bezier(.41,0,1,0);
     transform-origin: 50% 50%;
 }
 

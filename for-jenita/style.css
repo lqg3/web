@@ -60,4 +60,50 @@ div.header div.question div.options a.yes:hover {
 }
 div.header div.question div.options a:hover {
   background-color: #b3b3b3;
+}
+
+input {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Basic styling for the input container */
+.input-container {
+  color: white;
+  position: relative;
+  width: 300px;
+  margin: 20px auto;
+}
+
+/* Styling for the input field */
+#input-field {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  border-bottom: 2px solid #878787;
+  transition: border-color 0.3s ease;
+}
+
+/* Styling for the underline */
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f1f1f1; /* Highlight color */
+  transition: width 0.3s ease;
+}
+
+/* Highlight the underline when the input is focused */
+#input-field:focus + .underline {
+  width: 100%;
+}
+
+/* Optional: Change the border color when focused */
+#input-field:focus {
+  border-bottom-color: transparent; /* Hide the default underline */
 }/*# sourceMappingURL=style.css.map */

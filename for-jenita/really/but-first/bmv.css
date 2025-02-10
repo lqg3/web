@@ -39,7 +39,7 @@ body {
 
 #questionZoom {
   display: block;
-  transition: transform 10s cubic-bezier(0.63, 0, 0.96, 0.71);
+  transition: transform 10s cubic-bezier(0.41, 0, 1, 0);
   transform-origin: 50% 50%;
 }
 

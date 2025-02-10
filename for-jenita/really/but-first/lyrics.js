@@ -42,15 +42,13 @@ function syncLyrics(audio, lyrics) {
 }
 
 async function shiningBackground() {
-    console.log("background active");
 
     const lyricsElement = document.getElementById("lyrics");
-    const shiningColors = ["#FFD700", "#FFDF00", "#FFBF00", "#FFAF00", "#FF9F00", "#FF8F00", "#FF7F00"];
+    const shiningColors = ["#FFD700", "#931621", "#29339B", "#F76C5E", "#95BF74", "#E8871E", "#EBF5DF"];
     let interval = null;
 
     function updateShining() {
         const currentLine = lyricsElement.innerText;
-        console.log(currentLine)
         if (currentLine.includes("SHINE")) {
             console.log("shining");
             if (!interval) {
