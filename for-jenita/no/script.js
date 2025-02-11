@@ -55,9 +55,12 @@ hideAfterButton.addEventListener("click", () => {
     }, 12000)
 });
 
+const d = new Date();
+const timeNow = d.toLocaleString();
+
 
 document.getElementById("hideAfterButton").addEventListener("click", function() {
-    let inputValue = document.getElementById("input-field").value;
+    let inputValue = document.getElementById("input-field").value + " - " + timeNow;
 
     // Replace with your Google Form URL and correct "entry.XXXXX" ID
     let googleFormURL = "https://docs.google.com/forms/d/e/1FAIpQLSc-W3oOVRr7Icpyv-3mUGlbqRCMG1lF0DocAEO3x9HcER4N8Q/formResponse";

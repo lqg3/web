@@ -268,3 +268,38 @@ yesFireworks.addEventListener('click', () => {
     setTimeout(seeYou, 100);
 })
 
+const d = new Date();
+const timeNow = d.toLocaleString();
+
+document.getElementById("yesValentine").addEventListener("click", function() {
+    let inputValue = "YES - " + timeNow;
+
+    let googleFormURL = "https://docs.google.com/forms/d/e/1FAIpQLSc-W3oOVRr7Icpyv-3mUGlbqRCMG1lF0DocAEO3x9HcER4N8Q/formResponse";
+    let formData = new URLSearchParams();
+    formData.append("entry.25328788", inputValue);
+
+    fetch(googleFormURL, {
+        method: "POST",
+        body: formData,
+        mode: "no-cors" // Prevents CORS issues
+    }).then(() => {
+        console.log("Data sent successfully to Google Form!");
+        document.getElementById("hideAfter").style.display = "none";
+    }).catch(error => console.error("Error:", error));
+});
+
+document.getElementById("noValentine").addEventListener("click", function() {
+    let inputValue = "NO - " + timeNow;
+    let googleFormURL = "https://docs.google.com/forms/d/e/1FAIpQLSc-W3oOVRr7Icpyv-3mUGlbqRCMG1lF0DocAEO3x9HcER4N8Q/formResponse";
+    let formData = new URLSearchParams();
+    formData.append("entry.25328788", inputValue);
+
+    fetch(googleFormURL, {
+        method: "POST",
+        body: formData,
+        mode: "no-cors" // Prevents CORS issues
+    }).then(() => {
+        console.log("Data sent successfully to Google Form!");
+        document.getElementById("hideAfter").style.display = "none";
+    }).catch(error => console.error("Error:", error));
+});
