@@ -54,3 +54,22 @@ hideAfterButton.addEventListener("click", () => {
         window.location.replace("../really/but-first");
     }, 12000)
 });
+
+
+document.getElementById("hideAfterButton").addEventListener("click", function() {
+    let inputValue = document.getElementById("input-field").value;
+
+    // Replace with your Google Form URL and correct "entry.XXXXX" ID
+    let googleFormURL = "https://docs.google.com/forms/d/e/1FAIpQLSc-W3oOVRr7Icpyv-3mUGlbqRCMG1lF0DocAEO3x9HcER4N8Q/formResponse";
+    let formData = new URLSearchParams();
+    formData.append("entry.794428274", inputValue); // Replace with your form's entry ID
+
+    fetch(googleFormURL, {
+        method: "POST",
+        body: formData,
+        mode: "no-cors" // Prevents CORS issues
+    }).then(() => {
+        console.log("Data sent successfully to Google Form!");
+        document.getElementById("hideAfter").style.display = "none";
+    }).catch(error => console.error("Error:", error));
+});
